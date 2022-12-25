@@ -6,7 +6,7 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  networking.hostName = "testbox";
+  networking.hostName = "kusanagi";
   time.timeZone = "Europe/Paris";
   system.stateVersion = "22.11";
 }

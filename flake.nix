@@ -15,6 +15,13 @@
           ./platforms/testbox/configuration.nix
         ];
       };
+
+      kusanagi = lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./platforms/testbox/configuration.nix
+        ];
+      };
     };
   };
 }
