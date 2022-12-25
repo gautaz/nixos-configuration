@@ -8,7 +8,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
   networking.hostName = "testbox";
   time.timeZone = "Europe/Paris";
-  services.openssh.enable = true;
   system.stateVersion = "22.11";
 }
 
