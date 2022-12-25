@@ -19,7 +19,7 @@
       kusanagi = lib.nixosSystem {
         inherit system;
         modules = [
-          ./platforms/testbox/configuration.nix
+          ./platforms/kusanagi/configuration.nix
         ];
       };
     };
