@@ -12,7 +12,7 @@
       testbox = lib.nixosSystem {
         inherit system;
         modules = [
-          ./systems/testbox/configuration.nix
+          ./platforms/testbox/configuration.nix
         ];
       };
     };
