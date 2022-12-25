@@ -7,6 +7,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   networking.hostName = "kusanagi";
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   time.timeZone = "Europe/Paris";
   system.stateVersion = "22.11";
 }
