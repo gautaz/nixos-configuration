@@ -1,11 +1,14 @@
 { config, pkgs, ... }: {
-  imports = [ ./hardware-configuration.nix ];
+  imports = [
+    ../_/hw/qemu.nix
+    ../_/storage.nix
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   networking.hostName = "testbox";
   time.timeZone = "Europe/Paris";
   services.openssh.enable = true;
-  system.stateVersion = "22.11"; # Did you read the comment?
+  system.stateVersion = "22.11";
 }
 
