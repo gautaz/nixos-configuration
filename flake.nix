@@ -12,14 +12,14 @@
       testbox = lib.nixosSystem {
         inherit system;
         modules = [
-          ./platforms/testbox/configuration.nix
+          ./hosts/testbox/configuration.nix
         ];
       };
 
       kusanagi = lib.nixosSystem {
         inherit system;
         modules = [
-          ./platforms/kusanagi/configuration.nix
+          ./hosts/kusanagi/configuration.nix
         ];
       };
     };
